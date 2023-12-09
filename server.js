@@ -23,8 +23,7 @@ app.use(express.urlencoded({extended: true}))
 app.get('/', (req, res, next) => {
   res.send('Welcome to the Book API')
 })
-app.get('/books/:_id', (req, res, next) => {
-    res.json({ message: 'This is the book route' })}    )
+
 
 // Book: 
 const bookController = require('./controllers/books_controller.js')
